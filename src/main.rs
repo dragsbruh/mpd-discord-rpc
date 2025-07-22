@@ -34,6 +34,8 @@ struct Tokens {
 async fn main() {
     tracing_subscriber::fmt::init();
 
+    info!("Using cachy.dragsbruh.workers.dev to serve cover art images");
+
     let re = Regex::new(r"\$(\w+)").expect("Failed to parse regex");
 
     let config = Config::load();

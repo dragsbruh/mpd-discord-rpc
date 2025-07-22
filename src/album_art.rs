@@ -164,7 +164,7 @@ impl AlbumArtClient {
                 self.release_group_cache
                     .insert(cache_key, (id.clone(), record_type));
                 Some(format!(
-                    "https://coverartarchive.org/{record_type}/{id}/front-250"
+                    "https://cachy.dragsbruh.workers.dev/{record_type}/{id}/front-250"
                 ))
             } else {
                 None
